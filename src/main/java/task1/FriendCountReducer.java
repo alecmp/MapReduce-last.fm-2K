@@ -49,7 +49,7 @@ public class FriendCountReducer extends Reducer<LongWritable, Text, LongWritable
 			if (counter < 5) {
 				context.write(entry.getKey(), entry.getValue());
 				counter++;
-			}
+			}else break;
 		}
 
 	}
